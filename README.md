@@ -10,7 +10,7 @@ LaTeX Template for Curriculum Vitæ
 -------------
 这是我的个人简历LaTeX模版，包含中英文两个版本。 
 
-源中包含简历TeX源文件、所用的宏包，还提供了Markdown、HTML、PNG及PDF格式的简历以供预览。
+源中包含简历TeX源文件、所用的宏包，还提供了Markdown、HTML及PDF格式的简历。
 
 ##使用##
 
