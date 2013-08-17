@@ -1,4 +1,4 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+﻿%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % "ModernCV" CV and Cover Letter
 % LaTeX Template
 % Version 1.1 (9/12/12)
@@ -13,8 +13,8 @@
 % CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
 %
 % Important note:
-% This template requires the moderncv.cls and .sty files to be in the same 
-% directory as this .tex file. These files provide the resume style and themes 
+% This template requires the moderncv.cls and .sty files to be in the same
+% directory as this .tex file. These files provide the resume style and themes
 % used for structuring the document.
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -23,13 +23,15 @@
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
-\documentclass[10pt,a4paper,roman]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+\documentclass[10pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+% moderncv version 1.5.1 (29 Apr 2013)
+
 
 \moderncvstyle{banking} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
 \moderncvcolor{black} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
 
-\usepackage[adobefonts]{ctex} %中文支持  
-\setCJKmainfont{SimSun}  
+\usepackage[adobefonts]{ctex} %中文支持
+\setCJKmainfont{SimSun}
 
 %\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
 
@@ -40,20 +42,17 @@
 %----------------------------------------------------------------------------------------
 %	NAME AND CONTACT INFORMATION SECTION
 %----------------------------------------------------------------------------------------
-
-\firstname{万} % Your first name
-\familyname{虎} % Your last name
-
+\name{万}{虎}
 % All information in this block is optional, comment out any lines you don't need
 \title{个人简历}
 \address{首都师范大学~信息工程学院}{海淀区, 北京市 100048}
-\mobile{(+86) 152 10594789}
-%\phone{(000) 111 1112}
-%\fax{(000) 111 1113}
-\email{wanhu@cnu.edu.cn}
-\homepage{mengyingchina.github.com}{mengyingchina.github.com} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+\phone[mobile]{(+86)~152~10594789}
+\email{mengyingchina@163.com}
+%\homepage{www.wanhu.me}
+%\social[twitter]{mengyingchina}
+%\social[github]{mengyingchina}
 %\extrainfo{additional information}
-%\photo[70pt][0.4pt]{pictures/picture} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+%\photo[70pt][0.4pt]{sunwisespace} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
 %\quote{"A witty and playful quotation" - John Smith}
 
 %----------------------------------------------------------------------------------------
@@ -63,12 +62,19 @@
 \makecvtitle % Print the CV title
 
 %----------------------------------------------------------------------------------------
+%	POSITION APPLIED（CAREER OBJECTIVE）
+%----------------------------------------------------------------------------------------
+%\section{求职意向}
+%%\subsection{求职意向}
+%\cventry{期望月薪：  面议}{应聘职位：初级硬件工程师}{\includegraphics[scale=0.43]{sunwisespace.jpg}}{}{}{}
+
+%----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
 %----------------------------------------------------------------------------------------
 
 \section{教育背景}
 
-\cventry{2009--至今}{计算机科学与技术}{首都师范大学}{北京}{\textit{GPA -- 3.93}}{}{访学经历:2012年赴韩国校外访学}  % Arguments not required can be left empty
+\cventry{2009--2013}{计算机科学与技术}{首都师范大学}{应届本科}{\textit{GPA -- 3.93/5}}{}{首都师范大学优秀毕业生}  % Arguments not required can be left empty
 
 %----------------------------------------------------------------------------------------
 %	WORK EXPERIENCE SECTION
@@ -76,21 +82,33 @@
 
 \section{项目经历}
 %------------------------------------------------
-\subsection{``国家大学生创新性实验计划"项目}
+\subsection{首都师范大学``本科生毕业论文（设计）"}
 
-\cventry{2010--2011}{项目负责人}{Unix/Linux环境下路由管理转换接口设计与实现}{国家级}{}{
+\cventry{2012--2013}{毕设小组负责人}{基于DDS 技术的AM/FM信号调制的设计及其FPGA 实现}{}{}{
 \begin{itemize}
-\item 负责在Linux环境下实现软路由功能（基于GNU Zebra），设计实现路由管理转换接口
-\item 项目通过学校验收，项目成果在学院部分实验室得到应用
+	\item 负责基于直接数字频率合成(DDS) 技术设计和实现幅度/频率调制功能
+	\item 使用Altera 公司的Cyclone II 系列FPGA 芯片，完成系统编程
+    \item 参与设计制作PCB 板，实现调制信号的采集和调频信号的发射
 \end{itemize}
 }
+%------------------------------------------------
+\subsection{首都师范大学``本科生科学研究与创业行动"项目}
+
+\cventry{2012--2013}{项目负责人}{基于Nios II软核的FIR滤波器的设计}{校级}{}{
+\begin{itemize}
+	\item 负责解决FIR的IP核的设计，利用Audio ADC/DAC引脚来设计音频输入
+	\item 负责解决FIR模块的例化，利用硬件描述语言实现整个音频滤波
+    \item 基于Cyclone II EP2C70F896C6处理器实现FIR/IIR滤波器
+\end{itemize}
+}
+
 %------------------------------------------------
 %------------------------------------------------
 \subsection{``北京市大学生科学研究与创业行动计划"项目}
 
 \cventry{2011--2012}{项目成员}{功耗和温度感知的多核操作系统研究}{市级}{}{
 \begin{itemize}
-\item 参与设计和实现一种Cache感知的调度算法（CAS），负责算法在Linux环境下的测试和仿真，处理实验数据
+\item 参与设计实现一种Cache感知的调度算法（CAS），负责算法在Linux环境下的测试仿真数据处理
 \item 项目获得\textbf{``北京市大学生科学研究与创业行动计划"二等奖}
 \item 研究论文《面向多核处理器系统的Cache 感知调度算法》发表在中文核心期刊《小型微型计算机系统》
 \end{itemize}
@@ -101,36 +119,38 @@
 
 \cventry{2011--2012}{项目负责人}{网络工程创新实验设计——基于Hadoop的海量数据应用研究}{校级}{}{
 \begin{itemize}
-\item 领导项目小组对Hadoop大规模数据排序算法TeraSort进行分析，探索TeraSort 作为基准测试程序的实际应用
+\item 带领小组对Hadoop大规模数据排序算法TeraSort进行分析并作为基准测试程序进行应用
 \item 项目被评为首都师范大学``实验室开放基金"优秀项目（学院\textbf{唯一}一个被评为优秀的项目）
 \end{itemize}
 }
 %------------------------------------------------
-\subsection{首都师范大学``本科生科学研究与创业行动"项目}
+\subsection{``国家大学生创新性实验计划"项目}
 
-\cventry{2012--至今}{项目负责人}{基于Nios II软核的FIR滤波器的设计}{校级}{}{
+\cventry{2010--2011}{项目成员}{Unix/Linux环境下路由管理转换接口设计与实现}{国家级}{}{
 \begin{itemize}
-	\item 负责解决FIR的IP核的设计，利用Audio ADC/DAC引脚来设计音频输入
-	\item 负责解决FIR模块的例化，利用硬件描述语言实现整个音频滤波
+\item 负责在Linux环境下实现软路由功能（基于GNU Zebra），设计实现路由管理转换接口
 \end{itemize}
 }
+
 %------------------------------------------------
-%------------------------------------------------
-\subsection{首都师范大学学位论文\LaTeX 模板开发}
-\cventry{2013}{项目负责人}{首都师范大学学位论文（本科生、硕博）\LaTeX 模板}{开源项目}{}{
-\begin{itemize}
-	\item 开发和维护首都师范大学本科生，硕士生、博士生学位论文\LaTeX 模板
-	\item 致力于校内数字排印与阅读的开发和推广
-\end{itemize}
-}
+%%------------------------------------------------
+%\subsection{首都师范大学学位论文\LaTeX 模板开发}
+%\cventry{2013}{项目负责人}{首都师范大学学位论文（本科生、硕博）\LaTeX 模板}{开源项目}{}{
+%\begin{itemize}
+%	\item 开发和维护首都师范大学本科生，硕士生、博士生学位论文\LaTeX 模板
+%\end{itemize}
+%}
+
 %----------------------------------------------------------------------------------------
 %	AWARDS SECTION
 %----------------------------------------------------------------------------------------
 
 \section{荣誉奖励}
 
+\cvitem{2013}{首都师范大学优秀毕业生}
+\cvitem{2012}{2012年12月作为大学生创新性实验优秀学生赴韩国校外访学一周}
 \cvitem{2011}{北京市大学生计算机应用大赛移动终端应用创意与程序设计二等奖~团队组长}
 \cvitem{2011}{第六届全国信息技术应用水平大赛比赛安卓应用开发团体赛三等奖~团队组长}
-\cvitem{2010-2012}{2010、2011、2012 学年度国家励志奖学金}
-
+\cvitem{2010 - 2012}{2010、2011、2012 学年度国家励志奖学金}
 \end{document}
+% 最后更新:2013年8月17日 10:18:45

@@ -15,13 +15,15 @@ LaTeX Template for Curriculum Vitæ
 
 ##使用##
 
-- 环境：简历在 Ubuntu Linux + TexLive2012 环境下使用XeLaTeX编译通过，未在Windows下测试。
+- 环境：简历在 Ubuntu Linux + TexLive2012-20120701以及Windows 7 + CTeX_2.9.2.164_Full 环境下使用XeLaTeX编译通过。
 
-- 编译：请下载后在修改Makefile中FILE选项来选择要编译的版本（中文、英文）
+- 用到的宏包：[moderncv v1.5.1 (2013/04/29)](https://launchpad.net/moderncv/+download)、[fontawesome v3.1.1（ 2013/05/10）](http://www.ctan.org/tex-archive/fonts/fontawesome)
+
+更新宏包至以上版本，或直接下载上述两个宏包后，安装其中的fontawesome字体，解压moderncv，并将fontawesome.sty、以及要编译的简历TeX文件直接放到moderncv目录，编译即可。
 
 
 致谢
 -------------
-模版使用了 Xavier Danaux (xdanaux@gmail.com) 开发的 moderncv.cls，还使用了moderncvstylebanking.sty和tweaklist.sty宏包。
+模版使用了 Xavier Danaux (xdanaux@gmail.com) 开发的 moderncv.cls、fontawesome宏包。
 
 对原开发者表示感谢!
