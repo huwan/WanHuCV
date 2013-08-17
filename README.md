@@ -1,4 +1,3 @@
-
 WanHu Curriculum Vitæ
 =========
 
@@ -24,6 +23,6 @@ LaTeX Template for Curriculum Vitæ
 
 致谢
 -------------
-模版使用了 Xavier Danaux (xdanaux@gmail.com) 开发的 moderncv.cls、fontawesome宏包。
+中英文简历模版来自于http://www.latextemplates.com/cat/curricula-vitae，使用了 Xavier Danaux (xdanaux@gmail.com) 开发的 moderncv.cls、fontawesome宏包。
 
 对原开发者表示感谢!
