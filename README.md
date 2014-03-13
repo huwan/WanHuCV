@@ -20,6 +20,8 @@ LaTeX Template for Curriculum Vitæ
 
 更新宏包至以上版本，或直接下载上述两个宏包后，安装其中的fontawesome字体，解压moderncv，并将fontawesome.sty、以及要编译的简历TeX文件直接放到moderncv目录，编译即可。
 
+注：中文简历依赖moderncv 宏包，英文可以单独使用。
+
 
 致谢
 -------------
